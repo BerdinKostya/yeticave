@@ -27,17 +27,17 @@ $user_name = 'Kostya'; // укажите здесь ваше имя
         <a class="main-header__add-lot button" href="pages/add-lot.html">Добавить лот</a>
 
         <nav class="user-menu">
-        <?php    if ($is_auth = 1) ?>
-{
+<if ($is_auth == 1)>
+
             <div class="user-menu__image">
                 <img src="img/user.jpg" width="40" height="40" alt="Пользователь">
             </div>
             <div class="user-menu__logged">
-                <p>$user_name</p>
+                <p>Kostya</p>
             </div>
-            }
- <?php else ?>
-{
+</if>
+<else>
+
             <ul class="user-menu__list">
                 <li class="user-menu__item">
                     <a href="#">Регистрация</a>
@@ -46,7 +46,7 @@ $user_name = 'Kostya'; // укажите здесь ваше имя
                     <a href="#">Вход</a>
                 </li>
             </ul>
-      }
+</else>
         </nav>
     </div>
 </header>
